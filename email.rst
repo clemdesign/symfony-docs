@@ -46,6 +46,9 @@ environment variable in the ``.env`` file:
 
     # use this to configure a traditional SMTP server
     MAILER_URL=smtp://localhost:465?encryption=ssl&auth_mode=login&username=&password=
+    
+    # use sendmail tool
+    MAILER_URL=sendmail://localhost
 
 .. caution::
 
