@@ -87,6 +87,17 @@ transport, but you can force to use one:
 .. tip::
 
     Check the :ref:`DSN formats <mailer_dsn>` for all supported providers.
+    
+Using Sendmail
+~~~~~~~~~~~~~~
+
+You can use the local sendmail tool using this command ``/usr/sbin/sendmail -bs``:
+
+.. code-block:: bash
+
+    # .env
+    # use local Sendmail tool
+    MAILER_DSN=sendmail://localhost
 
 Creating & Sending Messages
 ---------------------------
